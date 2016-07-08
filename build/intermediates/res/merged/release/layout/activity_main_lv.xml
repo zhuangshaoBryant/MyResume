@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/bg_main_lv"
+                tools:ignore="UnusedNamespace">
+
+    <LinearLayout
+        android:id="@+id/userfaceLl"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.yqy.myresume.view.RoundImageView
+            android:id="@+id/userfaceIv"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/icon_default_face" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/functionRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/userfaceLl"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_main_lv" >
+
+        <ListView
+            android:id="@+id/functionLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

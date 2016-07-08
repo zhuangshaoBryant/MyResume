@@ -1,0 +1,139 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:2:1-82:12
+	xmlns:android
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:3:11-69
+	package
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:2:11-37
+	android:versionName
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:5:11-36
+		INJECTED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml
+		INJECTED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:4:11-34
+		INJECTED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml
+		INJECTED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml
+uses-sdk
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:7:5-9:40
+	android:targetSdkVersion
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:9:9-38
+	android:minSdkVersion
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:8:9-34
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:12:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:13:22-77
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:16:5-83
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:16:22-81
+application
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:18:5-80:19
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:21:9-41
+	android:allowBackup
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:19:9-35
+	android:icon
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:20:9-45
+	android:theme
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:22:9-62
+activity#com.yqy.myresume.activity.MainLvActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:23:9-31:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:25:13-45
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:24:13-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:27:17-68
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:29:27-74
+activity#com.yqy.myresume.activity.info.InfoActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:32:9-35:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:33:13-55
+activity#com.yqy.myresume.activity.SettingActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:36:9-39:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:38:13-59
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:37:13-53
+activity#com.yqy.myresume.activity.info.InfoModifyActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:40:9-43:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:42:13-63
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:41:13-61
+activity#com.yqy.myresume.activity.info.InfoChooiceDateActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:44:9-47:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:46:13-63
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:45:13-66
+activity#com.yqy.myresume.activity.project.ProjectLvActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:48:9-51:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:50:13-62
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:49:13-63
+activity#com.yqy.myresume.activity.project.ProjectAddActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:52:9-55:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:54:13-63
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:53:13-64
+activity#com.yqy.myresume.activity.project.ProjectModifyActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:56:9-59:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:58:13-66
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:57:13-67
+activity#com.yqy.myresume.activity.utils.RadioActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:60:9-63:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:62:13-57
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:61:13-57
+activity#com.yqy.myresume.activity.utils.ChoiceDateActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:64:9-67:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:66:13-63
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:65:13-62
+activity#com.yqy.myresume.activity.work.WorkLvActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:68:9-71:20
+	android:label
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:70:13-59
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:69:13-57
+activity#com.yqy.myresume.activity.education.EducationActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:72:9-73:20
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:72:19-71
+activity#com.yqy.myresume.activity.education.EducationModifyActivity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:74:9-75:20
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:74:19-77
+activity#com.yqy.myresume.activity.education.Education2Activity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:76:9-77:20
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:76:19-72
+activity#com.yqy.myresume.activity.education.EducationModify2Activity
+ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:78:9-79:20
+	android:name
+		ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:78:19-78

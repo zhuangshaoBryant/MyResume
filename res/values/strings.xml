@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">壮少简历</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_modify_info">ModifyInfoActivity</string>
+    <string name="title_activity_project_lv">ProjectLvActivity</string>
+    <string name="title_activity_project_add">ProjectAddActivity</string>
+    <string name="title_activity_project_modify">ProjectModifyActivity</string>
+    <string name="title_activity_radio">RadioActivity</string>
+    <string name="title_activity_choice_date">ChoiceDateActivity</string>
+    <string name="title_activity_work_lv">WorkLvActivity</string>
+
+</resources>

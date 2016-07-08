@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\coloranimation.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\anim\\coloranimation.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\tran_previous_in.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\anim\\tran_previous_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\tran_in.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\anim\\tran_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\tran_out.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\anim\\tran_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\tran_previous_out.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\anim\\tran_previous_out.xml"
+    }
+]

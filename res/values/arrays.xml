@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="info_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="education_edu">
+        <item>本科</item>
+        <item>研究生</item>
+        <item>博士生</item>
+    </string-array>
+    <string-array name="education_english">
+        <item>CET-4</item>
+        <item>CET-6</item>
+    </string-array>
+    <string-array name="project_isonline">
+        <item>已上线</item>
+        <item>未上线</item>
+    </string-array>
+    <string-array name="project_type">
+        <item>android</item>
+        <item>ios</item>
+        <item>android、ios</item>
+    </string-array>
+    <string-array name="project_system">
+        <item>windows</item>
+        <item>Linux</item>
+        <item>苹果</item>
+    </string-array>
+    <string-array name="project_tool">
+        <item>eclipse</item>
+        <item>Android Studio</item>
+    </string-array>
+</resources>

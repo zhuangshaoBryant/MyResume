@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\project_lv.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\project_lv.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\project_modify.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\project_modify.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\main.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\radio.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\modify_info.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\modify_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\info.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\info.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\choice_date.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\choice_date.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\work_lv.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\work_lv.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\setting.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\menu\\project_add.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\menu\\project_add.xml"
+    }
+]
