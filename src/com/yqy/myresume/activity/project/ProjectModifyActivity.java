@@ -41,7 +41,7 @@ public class ProjectModifyActivity extends CommonActivity implements
 
 	private int resultCode;
 	private ProjectExperience bean;
-	private String id = "1";
+	private String id = "1";//默认id=1，第一次添加时，以后会赋值
 
 	@Override
 	protected void showNextPage() {
@@ -77,10 +77,12 @@ public class ProjectModifyActivity extends CommonActivity implements
 
 		resultCode = getIntent().getIntExtra("resultCode", 0);
 		bean = (ProjectExperience) getIntent().getSerializableExtra("bean");
+
 		if(bean == null){
 			setTitle("新增项目经验");
 			id = getIntent().getStringExtra("id");
 		}
+		id = getIntent().getStringExtra("id");//获得要修改的id
 		intData();
 
 		hideSoftInput();
@@ -129,7 +131,7 @@ public class ProjectModifyActivity extends CommonActivity implements
 			String tip = checkValue();
 			if (Utils.isEmpty(tip)) {
 				mIntent = new Intent();
-				mIntent.putExtra("id", "");
+				mIntent.putExtra("id", id+"");
 				mIntent.putExtra("bean", bean);
 				setResult(resultCode,mIntent);
 				finish();

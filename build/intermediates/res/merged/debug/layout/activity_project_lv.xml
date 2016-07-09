@@ -6,7 +6,7 @@
     <com.yqy.myresume.view.swipemenulistview.SwipeMenuListView
         android:id="@+id/lv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:cacheColorHint="#00000000"
         android:divider="#30000000"
         android:dividerHeight="0.5dp"

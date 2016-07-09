@@ -56,6 +56,10 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\drawable-hdpi\\icon_power.png"
     },
     {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\textview_bg.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\drawable-hdpi\\textview_bg.xml"
+    },
+    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_main_lv.png",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\drawable-hdpi\\bg_main_lv.png"
     },

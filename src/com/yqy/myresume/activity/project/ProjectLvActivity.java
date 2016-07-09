@@ -18,6 +18,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.yqy.myresume.R;
@@ -74,10 +76,17 @@ public class ProjectLvActivity extends CommonActivity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
-				Intent mIntent = new Intent(context, ProjectModifyActivity.class);
+
+				TableLayout contentTl = (TableLayout) arg1.findViewById(R.id.contentTl);
+				if(contentTl.getVisibility() == View.GONE){
+					contentTl.setVisibility(View.VISIBLE);
+				}else{
+					contentTl.setVisibility(View.GONE);
+				}
+				/*Intent mIntent = new Intent(context, ProjectModifyActivity.class);
 				mIntent.putExtra("bean",mList.get(arg2));
 				mIntent.putExtra("resultCode", modifyCode);
-				startActivityForResult(mIntent, 1);
+				startActivityForResult(mIntent, 1);*/
 			}
 		});
 
@@ -95,13 +104,30 @@ public class ProjectLvActivity extends CommonActivity {
 				// set item width
 				openItem.setWidth(Utils.dip2px(context,90));
 				// set item title
-				openItem.setTitle("Open");
+				openItem.setTitle("编辑");
 				// set item title fontsize
 				openItem.setTitleSize(18);
 				// set item title font color
 				openItem.setTitleColor(Color.WHITE);
 				// add to menu
 				menu.addMenuItem(openItem);
+
+				// create "展示" item
+				SwipeMenuItem showItem = new SwipeMenuItem(
+						getApplicationContext());
+				// set item background
+				showItem.setBackground(new ColorDrawable(Color.rgb(0xA5, 0xA5,
+						0xB8)));
+				// set item width
+				showItem.setWidth(Utils.dip2px(context,90));
+				// set item title
+				showItem.setTitle("展示");
+				// set item title fontsize
+				showItem.setTitleSize(18);
+				// set item title font color
+				showItem.setTitleColor(Color.WHITE);
+				// add to menu
+				menu.addMenuItem(showItem);
 
 				// create "delete" item
 				SwipeMenuItem deleteItem = new SwipeMenuItem(
@@ -131,10 +157,11 @@ public class ProjectLvActivity extends CommonActivity {
 //					open(item);
 					Intent mIntent = new Intent(context, ProjectModifyActivity.class);
 					mIntent.putExtra("bean",mList.get(position));
+					mIntent.putExtra("id",mList.get(position).getId());
 					mIntent.putExtra("resultCode", modifyCode);
 					startActivityForResult(mIntent, 1);
 					break;
-				case 1:
+				case 2:
 					// delete
 					// delete(item);
 //					mList.remove(position);
@@ -184,6 +211,7 @@ public class ProjectLvActivity extends CommonActivity {
 				e.printStackTrace();
 			}
 		}else{
+			//为空，自动到添加页面
 			Intent mIntent = new Intent(context, ProjectModifyActivity.class);
 			mIntent.putExtra("resultCode", addCode);
 			mIntent.putExtra("id", (mList.size()+1)+"");
@@ -241,7 +269,7 @@ public class ProjectLvActivity extends CommonActivity {
 	}
 
 	class ProjectAdapter extends BaseAdapter {
-
+		ViewHolder mHolder = null;
 		@Override
 		public int getCount() {
 			return mList.size();
@@ -259,7 +287,7 @@ public class ProjectLvActivity extends CommonActivity {
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-			ViewHolder mHolder = null;
+
 			if (convertView == null) {
 				convertView = LayoutInflater.from(context).inflate(
 						R.layout.item_project, null);
@@ -268,6 +296,25 @@ public class ProjectLvActivity extends CommonActivity {
 						.findViewById(R.id.nameTv);
 				mHolder.timeTv = (TextView) convertView
 						.findViewById(R.id.timeTv);
+				mHolder.typeTv = (TextView) convertView
+						.findViewById(R.id.typeTv);
+				mHolder.isonlineTv = (TextView) convertView
+						.findViewById(R.id.isonlineTv);
+				mHolder.toolTv = (TextView) convertView
+						.findViewById(R.id.toolTv);
+				mHolder.systemTv = (TextView) convertView
+						.findViewById(R.id.systemTv);
+				mHolder.briefTv = (TextView) convertView
+						.findViewById(R.id.briefTv);
+				mHolder.descTv = (TextView) convertView
+						.findViewById(R.id.descTv);
+				mHolder.lightsTv = (TextView) convertView
+						.findViewById(R.id.lightsTv);
+				mHolder.contentTl = (TableLayout) convertView
+						.findViewById(R.id.contentTl);
+				mHolder.itemLL = (LinearLayout) convertView
+						.findViewById(R.id.itemLL);
+
 				convertView.setTag(mHolder);
 			}else{
 				mHolder = (ViewHolder) convertView.getTag();
@@ -275,12 +322,42 @@ public class ProjectLvActivity extends CommonActivity {
 			ProjectExperience bean = mList.get(position);
 			mHolder.nameTv.setText(bean.getName());
 			mHolder.timeTv.setText(bean.getStart().replace("-", ".") + "-" +bean.getEnd().replace("-", "."));
+
+			mHolder.typeTv.setText(bean.getType());
+			mHolder.isonlineTv.setText(bean.getIsonline());
+			mHolder.toolTv.setText(bean.getTool());
+			mHolder.systemTv.setText(bean.getSystem());
+			mHolder.briefTv.setText(bean.getBrief());
+			mHolder.descTv.setText(bean.getDesc());
+			mHolder.lightsTv.setText(bean.getLights());
+
+		/*	mHolder.itemLL.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					if(mHolder.contentTl.getVisibility() == View.GONE){
+						mHolder.contentTl.setVisibility(View.VISIBLE);
+					}else{
+						mHolder.contentTl.setVisibility(View.GONE);
+					}
+				}
+			});*/
+
 			return convertView;
 		}
 
 		class ViewHolder {
 			TextView nameTv;
 			TextView timeTv;
+			TextView typeTv;
+			TextView isonlineTv;
+			TextView toolTv;
+			TextView systemTv;
+			TextView briefTv;
+			TextView descTv;
+			TextView lightsTv;
+		    TableLayout contentTl;
+			LinearLayout itemLL;
 		}
 
 	}

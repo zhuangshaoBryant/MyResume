@@ -1,15 +1,15 @@
 [
     {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_education_modify2.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_education_modify2.xml"
+    },
+    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_work_lv.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_work_lv.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_info_modify.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_info_modify.xml"
-    },
-    {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_education_modify2.xml",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_education_modify2.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\item_function.xml",
@@ -80,12 +80,12 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\wheel_sex_picker.xml"
     },
     {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_project_lv.xml",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_project_lv.xml"
-    },
-    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_education2.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_education2.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_project_lv.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_project_lv.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\common_dialog.xml",

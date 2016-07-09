@@ -257,29 +257,33 @@ containing a value of this type.
         public static final int pre2=0x7f020023;
         public static final int pre3=0x7f020024;
         public static final int textfield_multiline_default_holo_dark=0x7f020025;
-        public static final int wheel_bg=0x7f020026;
-        public static final int wheel_val=0x7f020027;
+        public static final int textview_bg=0x7f020026;
+        public static final int wheel_bg=0x7f020027;
+        public static final int wheel_val=0x7f020028;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0051;
+        public static final int action_settings=0x7f0b0056;
         public static final int ageTv=0x7f0b001c;
         public static final int bgView=0x7f0b0041;
         public static final int birthTv=0x7f0b001e;
         public static final int briefEt=0x7f0b0034;
+        public static final int briefTv=0x7f0b004c;
         public static final int btnLl=0x7f0b003b;
         public static final int centerBtn=0x7f0b003d;
         public static final int centerTv=0x7f0b0044;
         public static final int circle=0x7f0b0000;
         public static final int contentLayout=0x7f0b003f;
         public static final int contentLl=0x7f0b0007;
+        public static final int contentTl=0x7f0b004b;
         public static final int contentTv=0x7f0b003a;
         public static final int content_frame=0x7f0b0028;
         public static final int courseEt=0x7f0b0018;
         public static final int courseTv=0x7f0b0014;
         public static final int dateLl=0x7f0b0003;
         public static final int dateTv=0x7f0b0002;
-        public static final int day=0x7f0b004e;
+        public static final int day=0x7f0b0053;
         public static final int descEt=0x7f0b0035;
+        public static final int descTv=0x7f0b004d;
         public static final int eduTv=0x7f0b000b;
         public static final int emailEt=0x7f0b0026;
         public static final int emailTv=0x7f0b0022;
@@ -292,21 +296,23 @@ containing a value of this type.
         public static final int hometownTv=0x7f0b0023;
         public static final int iconIv=0x7f0b0048;
         public static final int isonlineTv=0x7f0b0030;
+        public static final int itemLL=0x7f0b0049;
         public static final int itemLl=0x7f0b0047;
         public static final int leftBtn=0x7f0b003c;
         public static final int leftIv=0x7f0b0043;
         public static final int leftTv=0x7f0b0042;
         public static final int left_drawer=0x7f0b002a;
         public static final int lightsEt=0x7f0b0036;
+        public static final int lightsTv=0x7f0b004e;
         public static final int lv=0x7f0b002f;
         public static final int mListView=0x7f0b0037;
         public static final int mainInfoRl=0x7f0b0008;
-        public static final int month=0x7f0b004d;
+        public static final int month=0x7f0b0052;
         public static final int myScrollView=0x7f0b0006;
-        public static final int mySwitchBtn=0x7f0b004b;
+        public static final int mySwitchBtn=0x7f0b0050;
         public static final int nameEt=0x7f0b0015;
         public static final int nameTv=0x7f0b000c;
-        public static final int okTv=0x7f0b004f;
+        public static final int okTv=0x7f0b0054;
         public static final int orderEt=0x7f0b0016;
         public static final int orderTv=0x7f0b0011;
         public static final int proTv=0x7f0b000a;
@@ -317,7 +323,7 @@ containing a value of this type.
         public static final int round=0x7f0b0001;
         public static final int schEt=0x7f0b0017;
         public static final int schTv=0x7f0b0013;
-        public static final int sex=0x7f0b0050;
+        public static final int sex=0x7f0b0055;
         public static final int sexLl=0x7f0b001a;
         public static final int sexTv=0x7f0b001d;
         public static final int sizeView=0x7f0b0005;
@@ -326,11 +332,11 @@ containing a value of this type.
         public static final int systemTv=0x7f0b0033;
         public static final int telEt=0x7f0b0025;
         public static final int telTv=0x7f0b0021;
-        public static final int textTv=0x7f0b004a;
+        public static final int textTv=0x7f0b004f;
         public static final int textView=0x7f0b0029;
         public static final int textView1=0x7f0b000d;
         public static final int textView2=0x7f0b000f;
-        public static final int timeTv=0x7f0b0049;
+        public static final int timeTv=0x7f0b004a;
         public static final int title=0x7f0b0004;
         public static final int titleLl=0x7f0b0038;
         public static final int titleTv=0x7f0b0039;
@@ -342,7 +348,7 @@ containing a value of this type.
         public static final int whiteView=0x7f0b001b;
         public static final int workingageEt=0x7f0b0024;
         public static final int workingageTv=0x7f0b0020;
-        public static final int year=0x7f0b004c;
+        public static final int year=0x7f0b0051;
     }
     public static final class layout {
         public static final int activity_choice_date=0x7f030000;

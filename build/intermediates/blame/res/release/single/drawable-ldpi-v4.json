@@ -20,11 +20,11 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\drawable-ldpi\\next1.png"
     },
     {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\pre1.png",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\drawable-ldpi\\pre1.png"
-    },
-    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\pre3.png",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\drawable-ldpi\\pre3.png"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\pre1.png",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\drawable-ldpi\\pre1.png"
     }
 ]

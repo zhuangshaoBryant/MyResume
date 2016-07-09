@@ -1,45 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:padding="10dp" >
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/itemLL"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical" >
+        android:orientation="horizontal"
+        android:padding="10dp">
 
-        <TextView
-            android:id="@+id/timeTv"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="时间"
-            android:textColor="#666666" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/nameTv"
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="时间"
+                android:textSize="16dp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="7dp"
+                android:text="项目名称"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="7dp"
-            android:text="项目名称"
-            android:textColor="#333333"
-            android:textSize="16sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:drawableRight="@drawable/arrow_right" />
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/arrow_right" />
+        </LinearLayout>
+
     </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/contentTl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="7dp"
+        android:shrinkColumns="1">
+        <TableRow>
+            <TextView
+                android:text="项目类型: "
+                android:layout_width="100dp"
+                android:textSize="16sp"
+                android:padding="7dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/typeTv"
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:text=""
+                android:textSize="16sp"
+            />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="是否上线: "
+                android:layout_width="100dp"
+                android:textSize="16sp"
+                android:padding="7dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/isonlineTv"
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:text=""
+                android:textSize="16sp"
+            />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="开发工具: "
+                android:layout_width="100dp"
+                android:textSize="16sp"
+                android:padding="7dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/toolTv"
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:text=""
+                android:textSize="16sp"
+            />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="操作系统: "
+                android:layout_width="100dp"
+                android:textSize="16sp"
+                android:padding="7dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/systemTv"
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:text=""
+                android:textSize="16sp"
+            />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="项目简介: "
+                android:layout_width="100dp"
+                android:textSize="16sp"
+                android:padding="7dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/briefTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text=""
+                android:textSize="16sp"
+            />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="责任描述: "
+                android:layout_width="100dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:padding="7dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/descTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text=""
+                android:textSize="16sp"
+            />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="项目亮点: "
+                android:layout_width="100dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:padding="7dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/lightsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text=""
+                android:textSize="16sp"
+            />
+        </TableRow>
+
+    </TableLayout>
 
 </LinearLayout>
+
