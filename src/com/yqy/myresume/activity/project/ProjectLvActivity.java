@@ -42,9 +42,10 @@ public class ProjectLvActivity extends CommonActivity {
 	private SwipeMenuListView mListView;
 	private List<ProjectExperience> mList;
 	private ProjectAdapter mAdapter;
-	
+
 	private int addCode = 1;
 	private int modifyCode = 2;
+	private int showCode = 3;
 
 	@Override
 	protected void showNextPage() {
@@ -70,17 +71,17 @@ public class ProjectLvActivity extends CommonActivity {
 		initData();
 		mAdapter = new ProjectAdapter();
 		mListView.setAdapter(mAdapter);
-		
+
 		mListView.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-					long arg3) {
+			                        long arg3) {
 
 				TableLayout contentTl = (TableLayout) arg1.findViewById(R.id.contentTl);
-				if(contentTl.getVisibility() == View.GONE){
+				if (contentTl.getVisibility() == View.GONE) {
 					contentTl.setVisibility(View.VISIBLE);
-				}else{
+				} else {
 					contentTl.setVisibility(View.GONE);
 				}
 				/*Intent mIntent = new Intent(context, ProjectModifyActivity.class);
@@ -102,7 +103,7 @@ public class ProjectLvActivity extends CommonActivity {
 				openItem.setBackground(new ColorDrawable(Color.rgb(0xC9, 0xC9,
 						0xCE)));
 				// set item width
-				openItem.setWidth(Utils.dip2px(context,90));
+				openItem.setWidth(Utils.dip2px(context, 90));
 				// set item title
 				openItem.setTitle("编辑");
 				// set item title fontsize
@@ -119,7 +120,7 @@ public class ProjectLvActivity extends CommonActivity {
 				showItem.setBackground(new ColorDrawable(Color.rgb(0xA5, 0xA5,
 						0xB8)));
 				// set item width
-				showItem.setWidth(Utils.dip2px(context,90));
+				showItem.setWidth(Utils.dip2px(context, 90));
 				// set item title
 				showItem.setTitle("展示");
 				// set item title fontsize
@@ -136,7 +137,7 @@ public class ProjectLvActivity extends CommonActivity {
 				deleteItem.setBackground(new ColorDrawable(Color.rgb(0xF9,
 						0x3F, 0x25)));
 				// set item width
-				deleteItem.setWidth(Utils.dip2px(context,90));
+				deleteItem.setWidth(Utils.dip2px(context, 90));
 				// set a icon
 				deleteItem.setIcon(R.drawable.ic_delete);
 				// add to menu
@@ -152,24 +153,33 @@ public class ProjectLvActivity extends CommonActivity {
 			public void onMenuItemClick(int position, SwipeMenu menu, int index) {
 //				ProjectExperience item = mList.get(position);
 				switch (index) {
-				case 0:
-					// open
+					case 0:
+						// open
 //					open(item);
-					Intent mIntent = new Intent(context, ProjectModifyActivity.class);
-					mIntent.putExtra("bean",mList.get(position));
-					mIntent.putExtra("id",mList.get(position).getId());
-					mIntent.putExtra("resultCode", modifyCode);
-					startActivityForResult(mIntent, 1);
-					break;
-				case 2:
-					// delete
-					// delete(item);
+						Intent mIntent = new Intent(context, ProjectModifyActivity.class);
+						mIntent.putExtra("bean", mList.get(position));
+						mIntent.putExtra("id", mList.get(position).getId());
+						mIntent.putExtra("resultCode", modifyCode);
+						startActivityForResult(mIntent, 1);
+						break;
+					case 1:
+						// 展示
+//					showItem(item);
+						Intent intent = new Intent(context, ProjectShowActivity.class);
+						intent.putExtra("bean", mList.get(position));
+						intent.putExtra("id", mList.get(position).getId());
+						intent.putExtra("resultCode", showCode);
+						startActivityForResult(intent,2);
+						break;
+					case 2:
+						// delete
+						// delete(item);
 //					mList.remove(position);
 //					mAdapter.notifyDataSetChanged();
-					mList.remove(position);
-					saveData();
-					mAdapter.notifyDataSetChanged();
-					break;
+						mList.remove(position);
+						saveData();
+						mAdapter.notifyDataSetChanged();
+						break;
 				}
 			}
 		});
@@ -190,15 +200,15 @@ public class ProjectLvActivity extends CommonActivity {
 
 		// other setting
 		// listView.setCloseInterpolator(new BounceInterpolator());
-		if(mList.size() == 0){
+		if (mList.size() == 0) {
 			//项目经验条目为0，则自动跳转到新增项目经验
 		}
 	}
-	
+
 	private void initData() {
 		mList = new ArrayList<ProjectExperience>();
 		String data = sp.read(Contacts.PROJECTEXPERIENCE, "");
-		if(!Utils.isEmpty(data)){
+		if (!Utils.isEmpty(data)) {
 			try {
 				JSONArray ja = new JSONArray(data);
 				for (int i = 0; i < ja.length(); i++) {
@@ -210,41 +220,48 @@ public class ProjectLvActivity extends CommonActivity {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		}else{
+		} else {
 			//为空，自动到添加页面
 			Intent mIntent = new Intent(context, ProjectModifyActivity.class);
 			mIntent.putExtra("resultCode", addCode);
-			mIntent.putExtra("id", (mList.size()+1)+"");
+			mIntent.putExtra("id", (mList.size() + 1) + "");
 			startActivityForResult(mIntent, 1);
 		}
 	}
-	
+
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		if(requestCode == 1 && data != null){
-			ProjectExperience bean= (ProjectExperience) data.getSerializableExtra("bean");
-			if(resultCode == addCode){
+		if (requestCode == 1 && data != null) {
+			ProjectExperience bean = (ProjectExperience) data.getSerializableExtra("bean");
+			if (resultCode == addCode) {
 				mList.add(bean);
 				saveData();
 			}
-			if(resultCode == modifyCode){
+			if (resultCode == modifyCode) {
+				saveData(bean);
+			}
+			mAdapter.notifyDataSetChanged();
+		}
+		if(requestCode == 2 && data != null){
+			ProjectExperience bean = (ProjectExperience) data.getSerializableExtra("bean");
+			if(resultCode == showCode){
 				saveData(bean);
 			}
 			mAdapter.notifyDataSetChanged();
 		}
 	}
-	
+
 	private void saveData(ProjectExperience bean) {
 		for (int i = 0; i < mList.size(); i++) {
-			if(mList.get(i).getId().equals(bean.getId())){
+			if (mList.get(i).getId().equals(bean.getId())) {
 				mList.set(i, bean);
 				break;
 			}
 		}
 		saveData();
 	}
-	
+
 	private void saveData() {
 		sp.write(Contacts.PROJECTEXPERIENCE, JsonUtil.objectToJson(mList));
 	}
@@ -252,12 +269,12 @@ public class ProjectLvActivity extends CommonActivity {
 	@Override
 	public void addLisener() {
 		findViewById(R.id.rightTv).setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View arg0) {
 				Intent mIntent = new Intent(context, ProjectModifyActivity.class);
 				mIntent.putExtra("resultCode", addCode);
-				mIntent.putExtra("id", (mList.size()+1)+"");
+				mIntent.putExtra("id", (mList.size() + 1) + "");
 				startActivityForResult(mIntent, 1);
 			}
 		});
@@ -270,6 +287,7 @@ public class ProjectLvActivity extends CommonActivity {
 
 	class ProjectAdapter extends BaseAdapter {
 		ViewHolder mHolder = null;
+
 		@Override
 		public int getCount() {
 			return mList.size();
@@ -316,12 +334,12 @@ public class ProjectLvActivity extends CommonActivity {
 						.findViewById(R.id.itemLL);
 
 				convertView.setTag(mHolder);
-			}else{
+			} else {
 				mHolder = (ViewHolder) convertView.getTag();
 			}
 			ProjectExperience bean = mList.get(position);
 			mHolder.nameTv.setText(bean.getName());
-			mHolder.timeTv.setText(bean.getStart().replace("-", ".") + "-" +bean.getEnd().replace("-", "."));
+			mHolder.timeTv.setText(bean.getStart().replace("-", ".") + "-" + bean.getEnd().replace("-", "."));
 
 			mHolder.typeTv.setText(bean.getType());
 			mHolder.isonlineTv.setText(bean.getIsonline());
@@ -356,7 +374,7 @@ public class ProjectLvActivity extends CommonActivity {
 			TextView briefTv;
 			TextView descTv;
 			TextView lightsTv;
-		    TableLayout contentTl;
+			TableLayout contentTl;
 			LinearLayout itemLL;
 		}
 

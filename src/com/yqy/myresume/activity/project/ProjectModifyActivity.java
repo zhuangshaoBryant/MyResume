@@ -17,6 +17,8 @@ import com.yqy.myresume.bean.DialogBean;
 import com.yqy.myresume.bean.ProjectExperience;
 import com.yqy.myresume.utils.Utils;
 
+import java.util.List;
+
 /**
  * 项目经验的 添加 修改 Description:
  */
@@ -42,6 +44,7 @@ public class ProjectModifyActivity extends CommonActivity implements
 	private int resultCode;
 	private ProjectExperience bean;
 	private String id = "1";//默认id=1，第一次添加时，以后会赋值
+	private List<String> photoShowPath;//图片保存路径
 
 	@Override
 	protected void showNextPage() {
@@ -103,6 +106,7 @@ public class ProjectModifyActivity extends CommonActivity implements
 			briefEt.setText(bean.getBrief());
 			descEt.setText(bean.getDesc());
 			lightsEt.setText(bean.getLights());
+			photoShowPath = bean.getPhotoShowPath();
 		}
 	}
 
@@ -127,7 +131,7 @@ public class ProjectModifyActivity extends CommonActivity implements
 					isonlineTv.getText().toString(),toolTv.getText().toString(),
 					typeTv.getText().toString(),systemTv.getText().toString(),
 					briefEt.getText().toString(),descEt.getText().toString(),
-					lightsEt.getText().toString());
+					lightsEt.getText().toString(),photoShowPath);
 			String tip = checkValue();
 			if (Utils.isEmpty(tip)) {
 				mIntent = new Intent();

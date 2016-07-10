@@ -1,6 +1,7 @@
 package com.yqy.myresume.bean;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 
@@ -18,9 +19,19 @@ public class ProjectExperience implements Serializable{
 	private String brief;//项目简介
 	private String desc;//责任描述
 	private String lights;//项目亮点
-	public ProjectExperience(String id,String name, String start, String end,
-			String isonline, String tool, String type, String system,
-			String brief, String desc, String lights) {
+	private List<String> photoShowPath;
+
+	public List<String> getPhotoShowPath() {
+		return photoShowPath;
+	}
+
+	public void setPhotoShowPath(List<String> photoShowPath) {
+		this.photoShowPath = photoShowPath;
+	}
+
+	public ProjectExperience(String id, String name, String start, String end,
+	                         String isonline, String tool, String type, String system,
+	                         String brief, String desc, String lights , List<String> photoShowPath) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -33,6 +44,7 @@ public class ProjectExperience implements Serializable{
 		this.brief = brief;
 		this.desc = desc;
 		this.lights = lights;
+		this.photoShowPath = photoShowPath;
 	}
 	public String getName() {
 		return name;

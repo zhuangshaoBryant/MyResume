@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 按下时 -->
-    <item android:drawable="@drawable/pre3" android:state_pressed="true"/>
-    <!-- 获取焦点时 -->
-    <item android:drawable="@drawable/pre2" android:state_focused="true"></item>
-    <!-- 默认情况 -->
-    <item android:drawable="@drawable/pre1"></item>
-</selector>

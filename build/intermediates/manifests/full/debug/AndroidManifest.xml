@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="15"
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -19,7 +19,9 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        >
         <activity
             android:name="com.yqy.myresume.activity.MainLvActivity"
             android:label="@string/app_name" >
@@ -76,6 +78,16 @@
         <activity android:name="com.yqy.myresume.activity.education.Education2Activity" >
         </activity>
         <activity android:name="com.yqy.myresume.activity.education.EducationModify2Activity" >
+        </activity>
+        <activity android:name="com.yqy.myresume.activity.project.ProjectShowActivity" >
+        </activity>
+        <activity android:name="com.yqy.myresume.activity.project.ProjectSingleShowActivity" >
+        </activity>
+        <activity android:name="com.maplejaw.library.PhotoPickActivity" >
+        </activity>
+        <activity android:name="com.maplejaw.library.AlbumPickActivity" >
+        </activity>
+        <activity android:name="com.maplejaw.library.PhotoPreviewActivity" >
         </activity>
     </application>
 
