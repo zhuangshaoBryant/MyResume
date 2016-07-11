@@ -4,12 +4,12 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_education_modify2.xml",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_education_modify2.xml"
-    },
-    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_work_lv.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_work_lv.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_education_modify2.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_education_modify2.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_photo_preview.xml",
@@ -96,12 +96,12 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\item_project.xml",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\item_project.xml"
-    },
-    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\item_project.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\item_project.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
@@ -136,12 +136,12 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_lv.xml",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_main_lv.xml"
-    },
-    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_album_pick.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\MyResume\\library\\unspecified\\res\\layout\\activity_album_pick.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_lv.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_main_lv.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\item_setting.xml",
@@ -240,12 +240,12 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_education2.xml"
     },
     {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_project_modify.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\activity_project_modify.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\project_show_photo_item.xml",
