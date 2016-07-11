@@ -47,7 +47,7 @@
         jar="C:\Users\zhuang\Desktop\MyResume\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="d4ddde126a9ee5924f9268733618ce5183d1be9f">
+        sha1="a86aa18464e7664b48ed7808967cb987eac1b247">
         <dex dex="C:\Users\zhuang\Desktop\MyResume\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4fa095ff5a342da752f0ff7cec7f0fff579e74d4\classes.dex" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jar="C:\Users\zhuang\Desktop\MyResume\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="094bd8ebd252d42440d7571d9ffbfd7214ec629b">
+        sha1="f8ac1281561832f6bc29ab7ebd149064aa27eaa1">
         <dex dex="C:\Users\zhuang\Desktop\MyResume\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c7cd82b6bad34b6c1fa1c1d9b7b2f7b1b0d44271\classes.dex" />
     </item>
     <item
