@@ -15,6 +15,7 @@ ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:2:1-87:12
 		INJECTED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml
 uses-sdk
 ADDED from C:\Users\zhuang\Desktop\MyResume\AndroidManifest.xml:7:5-9:40
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\zhuang\Desktop\MyResume\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
 MERGED from [MyResume:library:unspecified] C:\Users\zhuang\Desktop\MyResume\build\intermediates\exploded-aar\MyResume\library\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\zhuang\Desktop\MyResume\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:23.3.0] C:\Users\zhuang\Desktop\MyResume\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43

@@ -56,12 +56,12 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\item_function.xml",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\item_function.xml"
-    },
-    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\item_function.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\layout\\item_function.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\layout\\activity_project_show.xml",
