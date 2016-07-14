@@ -27,7 +27,7 @@ public abstract class AbstractActivity extends FragmentActivity {
 			R.drawable.icon_work,  R.drawable.icon_train,
 			 R.drawable.icon_other };// 图片资源
 	public String[] titles = { "我的信息", "教育经历", "项目经验", "专业技能","自我评价", "求职意向",
-			"实习经历", "工作经历", "其他" };// 功能标题
+			"实习经历", "工作经历", "预览简历" };// 功能标题
 	public List<Function> functionList;
 	/**
 	 * 这里添加所有公共的对象 单例

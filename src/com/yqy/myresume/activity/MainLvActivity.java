@@ -19,6 +19,7 @@ import com.yqy.myresume.activity.education.EducationActivity;
 import com.yqy.myresume.activity.info.InfoActivity;
 import com.yqy.myresume.activity.info.InfoModifyActivity;
 import com.yqy.myresume.activity.project.ProjectLvActivity;
+import com.yqy.myresume.activity.share.ShareWebviewActivity;
 import com.yqy.myresume.adapter.FunctionAdapter;
 
 public class MainLvActivity extends CommonActivity implements OnClickListener,
@@ -60,11 +61,11 @@ public class MainLvActivity extends CommonActivity implements OnClickListener,
 					height = rl.getMeasuredHeight();
 					// 获取到宽度和高度后，可用于计算
 					flag = true;
-					if(height % 4 > 0){
+					if (height % 4 > 0) {
 						rl.setPadding(0, height % 4, 0, 0);
 					}
 					initFunctionListData();
-					adapter = new FunctionAdapter(context, functionList, height-height % 4);
+					adapter = new FunctionAdapter(context, functionList, height - height % 4);
 					lv.setAdapter(adapter);
 				}
 				return true;
@@ -77,24 +78,27 @@ public class MainLvActivity extends CommonActivity implements OnClickListener,
 	private Intent toActivityById(String id) {
 		Intent intent = null;
 		switch (Integer.parseInt(id)) {
-		case 1:
-			intent = new Intent(context, InfoActivity.class);
-			break;
-		case 2:
-			intent = new Intent(context, EducationActivity.class);
-			break;
-		case 3:
-			intent = new Intent(context, ProjectLvActivity.class);
-		default:
-			break;
+			case 1:
+				intent = new Intent(context, InfoActivity.class);
+				break;
+			case 2:
+				intent = new Intent(context, EducationActivity.class);
+				break;
+			case 3:
+				intent = new Intent(context, ProjectLvActivity.class);
+				break;
+			case 9:
+				intent = new Intent(context, ShareWebviewActivity.class);
+			default:
+				break;
 		}
 		return intent;
 	}
-	
+
 	@Override
 	public void addLisener() {
 		findViewById(R.id.rightIv).setOnClickListener(this);
-		
+
 		lv.setOnItemClickListener(this);
 		/*lv.setOnScrollListener(new OnScrollListener() {// 滑动监听
 
@@ -130,7 +134,7 @@ public class MainLvActivity extends CommonActivity implements OnClickListener,
 	@Override
 	protected void onResume() {
 		super.onResume();
-		if(adapter != null){
+		if (adapter != null) {
 			initFunctionListData();
 			adapter.notifyDataSetChanged();
 		}
@@ -144,23 +148,23 @@ public class MainLvActivity extends CommonActivity implements OnClickListener,
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()) {
-		case R.id.rightIv:
-			startActivity(new Intent(context, SettingActivity.class));
-			break;
-		default:
-			break;
+			case R.id.rightIv:
+				startActivity(new Intent(context, SettingActivity.class));
+				break;
+			default:
+				break;
 		}
 	}
 
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-		if("true".equals(functionList.get(arg2).getFlag())){
+		if ("true".equals(functionList.get(arg2).getFlag())) {
 			Intent intent = toActivityById(functionList.get(arg2).getId());
-			if(intent != null)
+			if (intent != null)
 				startActivity(intent);
 			else
 				showToast("此功能正在开发中...");
-		}else{
+		} else {
 			showShortToast("此功能暂时关闭");
 		}
 		adapter.notifyDataSetChanged();

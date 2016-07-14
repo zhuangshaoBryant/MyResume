@@ -14,6 +14,7 @@
 
     <!-- 在SDCard中创建与删除文件权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -82,6 +83,8 @@
         <activity android:name="com.yqy.myresume.activity.project.ProjectShowActivity" >
         </activity>
         <activity android:name="com.yqy.myresume.activity.project.ProjectSingleShowActivity" >
+        </activity>
+        <activity android:name="com.yqy.myresume.activity.share.ShareWebviewActivity" >
         </activity>
         <activity android:name="com.maplejaw.library.PhotoPickActivity" >
         </activity>

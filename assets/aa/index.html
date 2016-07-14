@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>
+<html lang="zh-CN" class="lte-ie8">
+<![endif]-->
+<!--[if gt IE 8]>
+  <!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        个人简历
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] ||
+          function() { (i[r].q = i[r].q || []).push(arguments)
+          },
+          i[r].l = 1 * new Date();
+          a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63818301-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script type="text/javascript">
+         function info(data){
+            var user = eval('(' + data + ')');
+            document.getElementById("name").innerHTML = user.name;
+            document.getElementById("email").innerHTML += user.email;
+            document.getElementById("birth").innerHTML += user.birth;
+            document.getElementById("hometown").innerHTML += user.hometown;
+            document.getElementById("sex").innerHTML += user.sex;
+            document.getElementById("tel").innerHTML += user.tel;
+            document.getElementById("workingage").innerHTML += user.workingage;
+          }
+
+        function education(data){
+             var education = eval('(' + data + ')');
+             document.getElementById("eduname").innerHTML = education.name;
+             document.getElementById("edutime").innerHTML = education.start+"至"+education.end;
+             document.getElementById("proandedu").innerHTML += education.professional+"("+education.education+")";
+             document.getElementById("order").innerHTML += education.order;
+             document.getElementById("course").innerHTML += education.course;
+             document.getElementById("scholarship").innerHTML += education.scholarship;
+             document.getElementById("english").innerHTML = education.english;
+          }
+
+          function education1(data){
+             var education1 = eval('(' + data + ')');
+             document.getElementById("eduname1").innerHTML = education1.name;
+             document.getElementById("edutime1").innerHTML = education1.start+"至"+education1.end;
+             document.getElementById("proandedu1").innerHTML += education1.professional+"("+education1.education+")";
+             document.getElementById("order1").innerHTML += education1.order;
+             document.getElementById("course1").innerHTML += education1.course;
+             document.getElementById("scholarship1").innerHTML += education1.scholarship;
+          }
+
+          function project(data){
+              var project = eval('(' + data + ')');
+              for (var i = 0; i < project.length; i++) {
+                document.getElementById("project").innerHTML+=('<li class="timeline-item experience-internship"><h3 class="timeline-title"><span class="experience-place">')+
+                          project[i].name+('  (') +  project[i].start+('至')+project[i].end+(')')+('</span><time class="experience-time"></time></h3><dl class="experience-description timeline-content"><dt class="experience-position">')+
+                                        project[i].type+('</dt><dd class="experience-task">开发工具：')+project[i].tool+('</dd><dd class="experience-task">是否上线：')+project[i].isonline+('</dd><dd class="experience-task">操作系统：')+project[i].system+('</dd><dd class="experience-task">项目简介：')+project[i].brief+('</dd><dd class="experience-task">责任描述：')+project[i].desc+('</dd><dd class="experience-task">项目亮点：')+project[i].lights+('</dd></dl></li>');
+              }
+
+          }
+    </script>
+</head>
+
+<body>
+<!--[if lte IE 8]>
+<div class="lte-ie8-comment-wrapper">
+    <p class="lte-ie8-comment">
+        你正在使用 IE8 或更老的古董浏览器，还是快升级或者换浏览器吧~
+    </p>
+</div>
+<![endif]-->
+<aside>
+    <ul class="links">
+        <li class="link">
+            <a href="static/lich.pdf">
+                PDF 下载
+            </a>
+        </li>
+    </ul>
+</aside>
+<div class="container">
+    <main>
+        <header class="row">
+            <figure class="header-qrcode">
+                <img src="static/mmqrcode1456411128024.png" alt="lich"
+                     class="qrcode-img invisible-lt-sm visible-print"
+                />
+            </figure>
+            <section class="title">
+                <h1 id="name">
+                    壮少
+                </h1>
+                <h2 id ="">
+                    意向职位
+                </h2>
+            </section>
+            <address>
+                <ul class="contact">
+                    <li id="sex">
+                        性别：
+
+                    </li>
+                    <li  id="tel">
+                        电话：
+                    </li>
+                    <li id="email">
+                        邮箱：
+                    </li>
+                    <li id="birth">
+                        出生日期：
+                    </li>
+                    <li id="workingage">
+                        工作年龄：
+                    </li>
+                    <li id="hometown">
+                        生源地：
+                    </li>
+                </ul>
+            </address>
+        </header>
+        <article class="content row">
+            <article class="column-6 first column">
+                <section class="education">
+                    <div class="sec-title-wrapper">
+                        <h3 class="sec-title">
+                    <span class="sec-title-ch">
+                      教育经历
+                    </span>
+                    <span class="sec-title-en">
+                      Education
+                    </span>
+                        </h3>
+                    </div>
+                    <div class="timeline-wrapper">
+                        <ul class="sec-content timeline">
+                            <li class="timeline-item education-undergraduate">
+                                <h3 class="timeline-title">
+                                    <time class="education-time" id="edutime">
+                                        2013-11-01 至 2017-11-01
+                                    </time>
+                                </h3>
+                                <dl class="education-description timeline-content">
+                                    <dt class="education-name" id="eduname">
+                                        皇家理工大学
+                                    </dt>
+                                    <dd class="education-major" id="proandedu">
+                                        专业：
+                                    </dd>
+                                    <dd class="education-honor">
+                                        班级排名：
+                                        <strong id="order">
+
+                                        </strong>
+                                    </dd>
+                                    <dd class="education-honor">
+                                        奖学金：
+                                        <strong id="scholarship">
+
+                                        </strong>
+                                    </dd>
+                                    <dd class="education-honor" id="course">
+                                        所修课程：
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="education">
+                    <div class="timeline-wrapper">
+                        <ul class="sec-content timeline">
+                            <li class="timeline-item education-undergraduate">
+                                <h3 class="timeline-title">
+                                    <time class="education-time" id="edutime1">
+                                        2013-11-01 至 2017-11-01
+                                    </time>
+                                </h3>
+                                <dl class="education-description timeline-content">
+                                    <dt class="education-name" id="eduname1">
+                                        皇家科技大学
+                                    </dt>
+                                    <dd class="education-major" id="proandedu1">
+                                        专业：
+                                    </dd>
+                                    <dd class="education-honor">
+                                        班级排名：
+                                        <strong id="order1">
+
+                                        </strong>
+                                    </dd>
+                                    <dd class="education-honor">
+                                        奖学金：
+                                        <strong id="scholarship1">
+
+                                        </strong>
+                                    </dd>
+                                    <dd class="education-honor" id="course1">
+                                        所修课程：
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="language">
+                    <div class="sec-title-wrapper">
+                        <h3 class="sec-title">
+                    <span class="sec-title-ch">
+                      语言水平
+                    </span>
+                    <span class="sec-title-en">
+                      Language
+                    </span>
+                        </h3>
+                    </div>
+                    <div class="sec-content">
+                        <dl class="language-certificates">
+                            <div class="language-cert-wrapper">
+                                <dt class="language-cert-type" id="english">
+
+                                </dt>
+                            </div>
+                        </dl>
+                    </div>
+                </section>
+                <section class="experience">
+                    <div class="sec-title-wrapper">
+                        <h3 class="sec-title">
+                    <span class="sec-title-ch">
+                      项目经验
+                    </span>
+                    <span class="sec-title-en">
+                      Experience
+                    </span>
+                        </h3>
+                    </div>
+                    <div class="timeline-wrapper">
+                        <ul class="sec-content timeline" id="project">
+
+
+                        </ul>
+                    </div>
+                </section>
+            </article>
+
+
+        </article>
+    </main>
+</div>
+<footer>
+    <p>
+        此页面有壮少Bryant开发
+    </p>
+</footer>
+</body>
+
+</html>

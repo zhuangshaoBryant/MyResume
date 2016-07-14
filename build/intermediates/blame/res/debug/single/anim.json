@@ -48,12 +48,12 @@
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\tran_previous_out.xml",
-        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\anim\\tran_previous_out.xml"
-    },
-    {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\tran_previous_out.xml",
+        "source": "C:\\Users\\zhuang\\Desktop\\MyResume\\res\\anim\\tran_previous_out.xml"
     },
     {
         "merged": "C:\\Users\\zhuang\\Desktop\\MyResume\\build\\intermediates\\res\\merged\\debug\\anim\\tran_out.xml",
