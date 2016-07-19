@@ -54,6 +54,7 @@ public class ShareWebviewActivity extends CommonActivity {
 				mWebView.loadUrl("javascript:education('" + education + "'+" + "''" + ")");
 				mWebView.loadUrl("javascript:education1('" + education2 + "'+" + "''" + ")");
 				mWebView.loadUrl("javascript:project('" + project + "'+" + "''" + ")");
+				//mWebView.loadUrl("javascript:face('" + info + "'+" + "''" + ")");
 				rightTv.setVisibility(View.GONE);
 			}
 		});

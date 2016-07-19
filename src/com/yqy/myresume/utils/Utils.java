@@ -86,8 +86,6 @@ public class Utils {
 	/**
 	 * 通过生日的月份跟日得到星座 YY-MM-DD
 	 *
-	 * @param yue
-	 * @param ri
 	 * @return
 	 */
 	public static String getStarByBirth(String birthday) {

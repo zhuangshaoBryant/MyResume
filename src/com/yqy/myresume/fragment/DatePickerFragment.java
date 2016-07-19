@@ -86,6 +86,7 @@ public class DatePickerFragment extends Fragment implements OnWheelScrollListene
 		initDay(curYear,curMonth);
 		day.setLabel("日");
 		day.setCyclic(true);
+		day.addScrollingListener(this);
 
 		year.setCurrentItem(curYear - startYear);
 		month.setCurrentItem(curMonth - 1);
@@ -151,7 +152,11 @@ public class DatePickerFragment extends Fragment implements OnWheelScrollListene
 		int n_year = year.getCurrentItem() + startYear;//
 		int n_month = month.getCurrentItem() + 1;//
 		initDay(n_year,n_month);
-		String birthday=new StringBuilder().append((year.getCurrentItem()+startYear)).append("-").append((month.getCurrentItem() + 1) < 10 ? "0" + (month.getCurrentItem() + 1) : (month.getCurrentItem() + 1)).append("-").append(((day.getCurrentItem()+1) < 10) ? "0" + (day.getCurrentItem()+1) : (day.getCurrentItem()+1)).toString();
+		String birthday=new StringBuilder().append((year.getCurrentItem()+startYear)).append("-")
+				.append((month.getCurrentItem() + 1) < 10 ? "0"
+						+ (month.getCurrentItem() + 1) : (month.getCurrentItem() + 1)).append("-")
+				.append(((day.getCurrentItem()+1) < 10) ? "0" +
+						(day.getCurrentItem()+1) : (day.getCurrentItem()+1)).toString();
 		onChooiceDate(birthday);
 	}
 	

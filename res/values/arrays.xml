@@ -20,7 +20,11 @@
     <string-array name="project_type">
         <item>android</item>
         <item>ios</item>
-        <item>android、ios</item>
+        <item>PHP</item>
+        <item>web后端</item>
+        <item>web前端</item>
+        <item>图像处理</item>
+        <item>信息安全</item>
     </string-array>
     <string-array name="project_system">
         <item>windows</item>
@@ -28,7 +32,10 @@
         <item>苹果</item>
     </string-array>
     <string-array name="project_tool">
+        <item>无</item>
         <item>eclipse</item>
         <item>Android Studio</item>
+        <item>VS</item>
+        <item>KaliLinux</item>
     </string-array>
 </resources>
